@@ -1,98 +1,6 @@
-@font-face {
-  font-family: 'Poppins';
-  src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; 
-}
+/* ------------------------For Accounts------------------------ */
 
-@font-face {
-  font-family: 'Poppins';
-  src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; 
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('assets/fonts/Poppins-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap; 
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap; 
-}
-
-*{
-    box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Loading Screen */
-
-#loading-screen, #mainFrame1 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #5f1616;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fadeOut 0.5s linear forwards;
-}
-
-#loading-screen{
-    z-index: 9999;
-    animation-delay: 2s;
-}
-
-.spinner {
-    width: 50px;
-    height: 50px;
-    border: 5px solid #e0e0e0;
-    border-top: 5px solid #e74c3c;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-
-#mainFrame1{
-    z-index: 9998;
-    animation-delay: 5s;
-}
-
-.logo{
-    width: 45vw;
-    height: 45vh;
-    background: url("assets/images/logo1.png") center / contain no-repeat;
-}
-
-@keyframes spin {
-    100% {transform: rotate(360deg);}
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-        visibility: visible;
-    }
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-/* For Accounts */
-
-/* Yung "PharmaTrack na parang header */
+/* ------------Yung "PharmaTrack na parang header------------ */
 header{
     position: fixed;
     top: 0;
@@ -115,10 +23,16 @@ header{
 header div{
     width:80%;
     height: 50%;
-    background: url(assets/images/logo2.png) center / contain no-repeat;
+    background: url("../assets/images/logo2.png") center / contain no-repeat;
 }
 
-/* yung sign in */
+@keyframes slide {
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* ------------------------yung sa main content------------------------ */
 
 main{
     position: fixed;
@@ -126,11 +40,9 @@ main{
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 30px 0 0 0;
     display: flex;
     justify-content: center;
     overflow: auto;
-    scrollbar-width: none;
 }
 
 main section{
@@ -146,14 +58,17 @@ main section > div, main section form{
     padding: 20px;
 }
 
+/*------------------------ yung sa roles ------------------------*/
+
 .whitespace{
     width: 100%;
     max-height: 45vh;
-    aspect-ratio: 16 / 8;
+    aspect-ratio: 16 / 10;
     grid-column: 1 / -1;
 }
 
 .instruction {
+    width: 100%;
     margin: 0;
     min-width: 0;
     grid-column: 1 / -1;
@@ -163,12 +78,12 @@ main section > div, main section form{
     margin: 0;
 }
 
-.instruction > h1{
+.instruction h1{
     font-size: 30px;
     font-weight: 600;
 }
 
-.instruction > p{
+.instruction p{
     font-size: 15px;
     font-weight: 600;
     color: gray;
@@ -177,6 +92,7 @@ main section > div, main section form{
 .roles h2{
     margin: 0;
     width: 100%;
+    max-width: 400px;
     font-size: 20px;
     font-weight: 600;
 }
@@ -205,6 +121,8 @@ main section > div, main section form{
     margin-top: 0;
 }
 
+/*------------------------ yung sign-in form ------------------------*/
+
 .signInForm{
     min-height: 35vh;
     height: 30vh;
@@ -215,7 +133,7 @@ main section > div, main section form{
 }
 
 .signInForm div{
-    height: 30px;
+    height: 15px;
 }
 
 .signInForm label{
@@ -250,10 +168,21 @@ main section > div, main section form{
     .instruction {
         grid-column: span 1;
     }
+
+    main section article{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signInForm input{
+        min-width: 300px;
+    }
 }
 
-@keyframes slide {
-    100%{
-        transform: translateY(0);
+@media (max-height: 670px) {
+    main *{
+        transform: scale(80%);
     }
 }

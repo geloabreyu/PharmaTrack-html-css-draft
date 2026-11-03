@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PharmaTrack</title>
     <link rel="stylesheet" href="PharmaTrack Main.css">
+    <link rel="stylesheet" href="../PharmaTrack Global/PharmaTrack.css">
     <link rel="icon" type="image/png" href="assets/images/logo1.png">
 </head>
 
@@ -18,36 +19,36 @@
         <div class="logo"></div>
     </aside>
 
-    <main>
-
-        <header id="header">
+    <header id="header">
             <div></div>
-        </header>
+    </header>
 
+    <main>
         <section>
+            <article class="whitespace">
+            </article>
 
-            <div class="whitespace">
-            </div>
-
-            <div class="instruction">
+            <article class="instruction">
                 <h1>Sign in to your account</h1>
                 <p>Select your role and enter your credentials to continue</p>
-            </div>
+            </article>
 
-            <div class="roles">
+            <article class="roles">
                 <h2>Select Role</h2>
                 <button class="adminbtn">Administrator</button>
                 <button>Employee</button>
-            </div>
+            </article>
 
-            <form  class="signInForm">
-                <div><!-- whitespace --></div>
-                <label>Username</label>
-                <input type="text" name="username" required>
-                <label>Password</label>
-                <input type="password" name="password" required>
-                <input type="submit" value="Sign In" class="submitbtn">
-            </form>
+            <article>
+                <form  class="signInForm">
+                    <div><!-- whitespace --></div>
+                    <label>Username</label>
+                    <input type="text" name="username" required>
+                    <label>Password</label>
+                    <input type="password" name="password" required>
+                    <input type="submit" value="Sign In" class="submitbtn">
+                </form>
+            </article>
         </section>
 
     </main>

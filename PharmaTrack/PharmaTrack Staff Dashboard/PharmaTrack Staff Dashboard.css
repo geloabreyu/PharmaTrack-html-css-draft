@@ -1,0 +1,42 @@
+body{
+    background: linear-gradient(#5f1616, #6d1919, #a70000);
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+
+/*------------container ng mga content sa page------------*/
+main{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: inline-block;
+}
+
+/*------------------------yung nav bar------------------------*/
+nav{
+    height: 100vh;
+    width: 23vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background: pink;
+    z-index: 2;
+}
+
+/*------------------------yung dashboard------------------------*/
+.dashCardContainer{
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+@media (max-width: 800px) {
+    nav{
+        aspect-ratio: 1 / 3;
+        height: 20vh;
+    }
+}
