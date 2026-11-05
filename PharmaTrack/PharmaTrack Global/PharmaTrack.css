@@ -33,7 +33,7 @@
 }
 
 *{
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scrollbar-width: none;
     transition: 0.1s;

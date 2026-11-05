@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PharmaTrack Staff Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
     <link rel="stylesheet" href="PharmaTrack Staff Dashboard.css">
     <link rel="stylesheet" href="../PharmaTrack Global/PharmaTrack.css">
     <link rel="icon" type="image/png" href="assets/images/logo1.png">
@@ -19,16 +20,23 @@
         <div class="logo"></div>
     </aside>
 
-    
+    <nav>
+        <button id="navbtn"><div id="navlogo"></div>PharmaTrack</button>
 
-    <main>
-        <nav id="">
-            <div></div>
-        </nav>
-
-        <section class="dashCardContainer">
-
+        <section id="navcontainer">
+            <a class="currentTab"><i class="fas fa-th-large"></i>Dashboard</a>
+            <a><i class="fas fa-capsules"></i>Medicines</a>
+            <a><i class="fas fa-box-open"></i>Inventory</a>
+            <a><i class="fas fa-shopping-cart"></i>Sales</a>
+            <a><i class="fas fa-chart-line"></i>Reports</a>
+            <a><i class="fas fa-user"></i>Profile</a>
+            <button class="logoutbtn"><i class="fas fa-right-from-bracket"></i>Log Out</button>
         </section>
+    </nav>
+
+        
+    <main>
+        <div class="content"></div>
     </main>
 
 
