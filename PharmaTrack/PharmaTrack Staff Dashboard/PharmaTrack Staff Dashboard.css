@@ -1,163 +1,41 @@
-body{
-    background: linear-gradient(#5f1616, #6d1919, #a70000);
-    background-attachment: fixed;
-    height: 100vh;
-    margin: 0;
-}
-
-/*------------------------yung nav bar------------------------*/
-nav{
-    height: 100vh;
-    width: 15vw;
-    min-width: 200px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(5px);
-    z-index: 5;
-    transition: 0s;
-}
-
-#navbtn{
-    width: 100%;
-    height: 100px;
-    background: none;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin-bottom: 20px;
-    padding-right: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    border: 0px;
-    border-bottom: 1px solid white;
-    box-sizing: border-box;
-}
-
-#navlogo{
-    background: url("../assets/images/logo1.png") center / contain no-repeat;
-    aspect-ratio: 1 / 1;
-    width: 50px;
-    min-width: 50px;
-}
-
-#logotext{
-    width: 70%;
-}
-
-#navcontainer a, #navcontainer .logoutbtn{
-    height: 50px;
-    width: 94%;
-    margin: 2% 1% 2% 5%;
-    padding: 5px 10px;
-    display: flex;
-    align-items: center;
-    color: white;
-    border-radius: 100px;
-    cursor: pointer;
-}
-
-#navcontainer a:hover{
-    background: white;
-    color: black;
-}
-
-#navcontainer a:active{
-    filter: brightness(95%);
-}
-
-#navcontainer i{
-    margin-right: 5px;
-}
-
-#navcontainer .currentTab{
-    background: white;
-    color: black;
-}
-/*------------------------ Yung Log Out button ------------------------*/
-
-.logoutbtn{
-    position: fixed;
-    bottom: 1%;
-    left: 20px;
-    padding: 5px 10px;
-    background: none;
-    border: none;
-    font-size: 20px;
-}
-
-.logoutbtn:active{
-        filter: brightness(90%);
-    }
-
-/*------------container ng mga content sa page------------*/
-main{
-    width: 85vw;
-    height: 100vh;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-/*------------------------yung content------------------------*/
-
 .content{
-    height: 95%;
-    width: 95%;
-    background: white;
-    border-radius: 30px;
-    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    align-items: center;
 }
 
+.content > h1{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    height: 5%;
+    align-self: flex-start;
+    background: gray;
+}
 
-@media (max-width: 1300px) {
-    main{
-        width: 100vw;
-        height: 100vh;
-        bottom: 0;
-        padding-top: 100px;
-    }
+.content > div{
+    width: 25%;
+    background: #e7e7e7;
+    border: 1.5px solid rgba(184, 184, 184, 0.6);
+    border-radius: 20px;
+    margin: 10px 0px;
+}
 
-    nav{
-        left: 10px;
-        height: 100px;
-        overflow: hidden;
-    }
+#totalInventory, #monthlyRevenue, #lowStockAlerts, #ExpiryAlerts{
+    width: 24%;  
+    height: 20%;  
+}
 
-    nav:hover{
-        overflow: auto;
-        height: auto;
-    }
+#salesOverview{
+    width: 64%;
+    height: 30%;
+}
 
-    nav:hover #navcontainer{
-        background:linear-gradient(to top, rgba(155, 6, 6, 0.8), rgba(0, 0, 0, 0));
-        border-radius: 0px 0px 10px 10px;
-        padding-bottom: 10px;
-    }
+#topSelling{
+    width: 34%;
+    height: 30%;
+}
 
-    #navcontainer > a{
-        margin: 2% 5% 2% 5%;
-    }
-
-    #navbtn{
-        border: 0px;
-    }
-
-    .logoutbtn{
-        font-size: medium;
-        position: relative;
-        bottom: 0;
-        left: 0;
-        margin: 2% 5% 2% 5%;
-    }
-
-    #navcontainer .logoutbtn:hover{
-        background: white;
-        color: black;
-    }
+#specificStockAlert, #specificExpiryAlert{
+    width: 49%;
+    height: 30%;
 }
