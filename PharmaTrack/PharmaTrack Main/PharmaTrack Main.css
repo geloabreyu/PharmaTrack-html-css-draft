@@ -14,8 +14,9 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins';
     animation: slide 0.25s ease-out forwards;
-    animation-delay: 5.5s;
+    animation-delay: 2.5s;
     transform: translateY(-100%);
     z-index: 2;
 }
@@ -50,7 +51,7 @@ main section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     animation: slide 0.25s ease-out forwards;
-    animation-delay: 5.5s;
+    animation-delay: 2.5s;
     transform: translateY(100%);
 }
 
@@ -93,6 +94,7 @@ main section > div, main section form{
     margin: 0;
     width: 100%;
     max-width: 400px;
+    font-family: 'poppins';
     font-size: 20px;
     font-weight: 600;
 }
@@ -137,6 +139,7 @@ main section > div, main section form{
 }
 
 .signInForm label{
+    font-family: 'Poppins';
     font-size: 20px;
     font-weight: 600;
 }

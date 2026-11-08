@@ -13,10 +13,6 @@
 
 <body>
 
-    <aside id="loading-screen">
-        <div class="spinner"></div>
-    </aside>
-
     <aside id="mainFrame1">
         <div class="logo"></div>
     </aside>
@@ -42,14 +38,90 @@
     <main>
         <section class="content">
             <h1>Dashboard</h1>
-            <div id="totalInventory"></div>
-            <div id="monthlyRevenue"></div>
-            <div id="lowStockAlerts"></div>
-            <div id="ExpiryAlerts"></div>
-            <div id="salesOverview"></div>
-            <div id="topSelling"></div>
-            <div id="specificStockAlert"></div>
-            <div id="specificExpiryAlert"></div>
+
+            <div id="totalInventory">
+                <h2>Total Inventory</h2>
+                <data>12345</data>
+                <p></p>
+            </div>
+
+            <div id="monthlyRevenue">
+                <h2>Monthly Revenue</h2>
+                <data>₱123,456</data>
+                <p>from 123 orders</p>
+            </div>
+
+            <div id="lowStockAlerts">
+                <h2>Low Stock Alerts</h2>
+                <data>123</data>
+                <p>items need attention</p>
+            </div>
+
+            <div id="ExpiryAlerts">
+                <h2>Expiry Alerts</h2>
+                <data>123</data>
+                <p>items need attention</p>
+            </div>
+
+            <div id="salesOverview">
+                <h2>Sales Overview</h2>
+                <p>Weekly Sales</p>
+                <talbe></table>
+            </div>
+
+            <div id="topSelling">
+                <h2>Top-Selling Medicines</h2>
+                <table>
+                    <tr>
+                        <th>Medicine</th>
+                        <th>Sales</th>
+                    </tr>
+                    <tr>
+                        <td>Amoxicillin 250mg</td>
+                        <td>₱12345</td>
+                    </tr>
+                    <tr>
+                        <td>Metformin 250mg</td>
+                        <td>₱12345</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="specificStockAlert">
+                <h2>Low Stock Alert</h2>
+                <table id="lsaTable">
+                    <tr>
+                        <th>Medicine</th>
+                        <th>Stock</th>
+                    </tr>
+                    <tr>
+                        <td>Amoxicillin 250mg</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Metformin 250mg</td>
+                        <td>15</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="specificExpiryAlert">
+                <h2>Expiry Alert</h2>
+                <table id="seaTable">
+                    <tr>
+                        <th>Medicine</th>
+                        <th>Expiration</th>
+                    </tr>
+                    <tr>
+                        <td>Amoxicillin 250mg</td>
+                        <td>2026-11-15</td>
+                    </tr>
+                    <tr>
+                        <td>Metformin 250mg</td>
+                        <td>2026-11-15</td>
+                    </tr>
+                </table>
+            </div>
         </section>
     </main>
 

@@ -1,41 +1,146 @@
 .content{
     justify-content: space-between;
+    align-content: space-between;
     align-items: center;
+    overflow: auto;
 }
 
 .content > h1{
     width: 100%;
-    font-size: 30px;
-    font-weight: 600;
     height: 5%;
-    align-self: flex-start;
-    background: gray;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .content > div{
     width: 25%;
-    background: #e7e7e7;
-    border: 1.5px solid rgba(184, 184, 184, 0.6);
+    background: #efefef;
+    border: 1.5px solid #ababab;
     border-radius: 20px;
-    margin: 10px 0px;
+    padding: 20px 20px;
+}
+
+.content > div > *{
+    width: 100%;
+    margin: 0;
+}
+
+.content > div h2{
+    height: 15%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#totalInventory > data, #monthlyRevenue > data, #lowStockAlerts > data, #ExpiryAlerts > data{
+    height: 40%;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#totalInventory > p, #monthlyRevenue > p, #lowStockAlerts > p, #ExpiryAlerts > p{
+    height: 15%;
+    font-size: 15px;
+    font-weight: 600;
+    color: #616161;
 }
 
 #totalInventory, #monthlyRevenue, #lowStockAlerts, #ExpiryAlerts{
     width: 24%;  
-    height: 20%;  
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
 }
 
 #salesOverview{
     width: 64%;
-    height: 30%;
+    height: 33%;
+}
+
+#salesOverview > p{
+    color: #616161;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#salesOverview > table{
+    height: 70%;
 }
 
 #topSelling{
     width: 34%;
-    height: 30%;
+    height: 33%;
 }
 
 #specificStockAlert, #specificExpiryAlert{
     width: 49%;
-    height: 30%;
+    height: 33%;
+}
+
+#lsaTable tr th:last-child, #seaTable tr th:last-child{
+    text-align: center;
+}
+
+#lsaTable tr td:last-child, #seaTable tr td:last-child{
+    text-align: center;
+    color: #e00000;
+}
+
+.content > div > table{
+    width: 100%;
+    border: 0px;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+    text-align: left;
+}
+
+.content > div > table th{
+    padding: 0px 10px;
+    color: #616161;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.content > div > table td{
+    padding: 10px;
+    border: 0px;
+    background: #d9d9d9;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.content > div > table td:first-child{
+    border-radius: 11px 0px 0px 11px;
+}
+
+.content > div > table td:last-child{
+    border-radius: 0px 11px 11px 0px;
+}
+
+@media (max-width: 1000px){
+    #totalInventory, #monthlyRevenue, #lowStockAlerts, #ExpiryAlerts{
+        width: 49%;
+        height: 20%;
+    }
+
+    .content > div{
+        margin-bottom: 20px;
+    }
+
+    #salesOverview, #topSelling, #specificStockAlert, #specificExpiryAlert{
+        width: 100%;
+    }
+
+    .content > div > h2{
+        height: auto;
+    }
+}
+
+@media (max-width: 500px){
+    #totalInventory, #monthlyRevenue, #lowStockAlerts, #ExpiryAlerts{
+        width: 100%;
+        height: 20%;
+    }
 }
