@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaTrack</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" />
+    <link rel="icon" type="image/png" href="assets/images/logo1.png">
+</head>
+<body>
+
+    <nav>
+
+        <div id="logo">
+            <a href="#" id="logoimg"><!--image--></a>
+            <a href="#" id="logotext">PharmaTrack</a>
+        </div>
+
+        <section id="navigation">
+            <ul>
+                <li><a href="#" class="dashtext"><i class="fas fa-th-large"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-capsules"></i>Medicine</a></li>
+                <li><a href="#"><i class="fas fa-box"></i>Inventory</a></li>
+                <li><a href="#"><i class="fas fa-truck"></i>Orders</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i>Sales</a></li>
+                <li><a href="#"><i class="fas fa-chart-line"></i>Reports</a></li>
+                <li><a href="#"><i class="fas fa-users"></i>Users</a></li>
+            </ul>
+        </section>
+
+    </nav>
+
+    <main>
+        <section class="content">
+            <h1>Dashboard</h1>
+
+            <div id="totalInventory">
+                <h2>Total Inventory</h2>
+                <data>12345</data>
+                <p></p>
+            </div>
+
+            <div id="monthlyRevenue">
+                <h2>Monthly Revenue</h2>
+                <data>₱123,456</data>
+                <p>from 123 orders</p>
+            </div>
+
+            <div id="lowStockAlerts">
+                <h2>Low Stock Alerts</h2>
+                <data>123</data>
+                <p>items need attention</p>
+            </div>
+
+            <div id="ExpiryAlerts">
+                <h2>Expiry Alerts</h2>
+                <data>123</data>
+                <p>items need attention</p>
+            </div>
+
+            <div id="salesOverview">
+                <h2>Sales Overview</h2>
+                <p>Weekly Sales</p>
+                <talbe></table>
+            </div>
+
+            <div id="topSelling">
+                <h2>Top-Selling Medicines</h2>
+                <table>
+                    <tr>
+                        <th>Medicine</th>
+                        <th>Sales</th>
+                    </tr>
+                    <tr>
+                        <td>Amoxicillin 250mg</td>
+                        <td>₱12345</td>
+                    </tr>
+                    <tr>
+                        <td>Metformin 250mg</td>
+                        <td>₱12345</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="specificStockAlert">
+                <h2>Low Stock Alert</h2>
+                <table id="lsaTable">
+                    <tr>
+                        <th>Medicine</th>
+                        <th>Stock</th>
+                    </tr>
+                    <tr>
+                        <td>Amoxicillin 250mg</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Metformin 250mg</td>
+                        <td>15</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="specificExpiryAlert">
+                <h2>Expiry Alert</h2>
+                <table id="seaTable">
+                    <tr>
+                        <th>Medicine</th>
+                        <th>Expiration</th>
+                    </tr>
+                    <tr>
+                        <td>Amoxicillin 250mg</td>
+                        <td>2026-11-15</td>
+                    </tr>
+                    <tr>
+                        <td>Metformin 250mg</td>
+                        <td>2026-11-15</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+</html>
