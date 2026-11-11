@@ -1,0 +1,177 @@
+.content > div{
+    height: 95%;
+    position: relative;
+}
+
+#salesHistory{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#historyBtn{
+    height: 25px;
+    width: auto;
+    padding: 0px 10px;
+    background: #a61d1d;
+    border: 1px solid #252525;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#avMedTable{
+    width: 100%;
+    max-height: 90%;
+    overflow: auto;
+}
+
+#avMedTable tr th, #avMedTable tr td{
+    text-align: center;
+}
+
+#decrementSales, #incrementSales{
+    height: 25px;
+    width: 25px;
+    margin: 0px 5px;
+    display: inline-grid;
+    place-items: center;
+    background: #efefef;
+    border: 1px solid #ababab;
+    border-radius: 100%;
+    color: #616161;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#addSales{
+    height: 25px;
+    width: 110px;
+    background: #a61d1d;
+    border: 1px solid #252525;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#decrementSales:hover, #incrementSales:hover, #addSales:hover, #historyBtn:hover{
+    filter: brightness(95%);
+}
+
+#decrementSales:active, #incrementSales:active, #addSales:active, #historyBtn:active{
+    transform: scale(1.05);
+}
+
+#pageButtons{
+    width: 208px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#pageButtons button{
+    height: 24px;
+    margin: 0px;
+    font-size: 15px;
+}
+
+#pageButtons #prevBtn, #pageButtons #nextBtn{
+    width: 80px;
+}
+
+.summaryCard{
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    background: #efefef;
+    border: 1.5px solid #ababab;
+    border-radius: 20px;
+    box-shadow: -5px 5px 10px #ababab;
+}
+
+.summaryCard > h2{
+    height: auto;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px;
+}
+
+#transactionSummary{
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    background: #d9d9d9;
+    border-radius: 10px;
+}
+
+#transactionSummary > p{
+    height: auto;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+#summaryTable{
+    width: 100%;
+    height: 48%;
+    overflow: auto;
+}
+
+#summaryTable table, #totalAmountTable table{
+    width: 100%;
+    border: 0px;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+    text-align: left;
+}
+
+#summaaryTable tr, #totalAmountTable tr{
+    height: 40px;
+}
+
+#summaryTable tr td, #totalAmountTable tr td{
+    width: 100%;
+    border: 0px;
+    padding: 0px 10px;
+    color: #252525;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#summaryTable tr td:first-child, #totalAmountTable tr td:first-child{
+    text-align: left;
+}
+
+#summaryTable tr td:last-child, #totalAmountTable tr td:last-child{
+    text-align: right;
+}
+
+#totalAmountTable{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+#receiptBtn{
+    width: 100%;
+    height: 30px;
+    background: #a61d1d;
+    border: 1px solid #252525;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}

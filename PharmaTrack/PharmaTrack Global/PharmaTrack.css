@@ -26,6 +26,14 @@
 
 @font-face {
     font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'Poppins';
     src: url('../assets/fonts/Poppins-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
@@ -58,6 +66,14 @@
 
 @font-face {
     font-family: 'Inter';
+    src: url('../assets/fonts/Inter_18pt-Light.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'Inter';
     src: url('../assets/fonts/Inter_18pt-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
@@ -67,8 +83,13 @@
 *{
     box-sizing: border-box;
     font-family: 'Inter';
-    scrollbar-width: none;
     transition: 0.1s;
+    scrollbar-width: thin;
+    scrollbar-color: gray transparent;
+}
+
+body{
+    scrollbar-width: none;
 }
 
 /* Loading Screen */

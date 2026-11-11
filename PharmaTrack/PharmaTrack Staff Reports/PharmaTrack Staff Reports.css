@@ -1,0 +1,33 @@
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    overflow: auto;
+}
+
+.content > div{
+    width: 100%;
+    height: 46%;
+    overflow: auto;
+}
+
+#topSellingTable{
+    width: 100%;
+    max-height: 90%;
+    overflow: auto;
+}
+
+#topSellingTable tr th, #topSellingTable tr td{
+    text-align: center;
+    font-weight: 600;
+}
+
+#topSellingTable tr th{
+    font-size: 15px;
+}
+
+#topSellingTable tr td{
+    font-size: 12px;
+}
