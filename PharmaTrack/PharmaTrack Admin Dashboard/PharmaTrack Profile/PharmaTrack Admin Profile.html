@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaTrack Staff Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+    <link rel="stylesheet" href="../PharmaTrack Global/PharmaTrack.css">
+    <link rel="stylesheet" href="../PharmaTrack Global/PharmaTrack Contents.css">
+    <link rel="stylesheet" href="PharmaTrack Staff Profile.css">
+    <link rel="icon" type="image/png" href="../assets/images/logo1.png">
+</head>
+
+<body>
+
+    <aside id="mainFrame1">
+        <div class="logo"></div>
+    </aside>
+
+<!--- NAVIGATION BAR --->
+
+    <nav>
+        <button id="navbtn"><div id="navlogo"></div>PharmaTrack</button>
+
+        <section id="navcontainer">
+            <a href="../PharmaTrack Admin Dashboard/PharmaTrack Admin Dashboard.html"><i class="fas fa-th-large"></i>Dashboard</a>
+            <a href="../PharmaTrack Admin Medicines/PharmaTrack Admin Medicines.html"><i class="fas fa-capsules"></i>Medicines</a>
+            <a href="../PharmaTrack Admin Inventory/PharmaTrack Admin Inventory.html"><i class="fas fa-box-open"></i>Inventory</a>
+            <a href="../PharmaTrack Admin Dashoard/PharmaTrack Admin Orders.html"><i class="fas fa-truck"></i>Orders</a>
+            <a href="../PharmaTrack Admin Sales/PharmaTrack Admin Sales.html"><i class="fas fa-shopping-cart"></i>Sales</a>
+            <a href="../PharmaTrack Admin Reports/PharmaTrack Admin Reports.html"><i class="fas fa-chart-line"></i>Reports</a>
+            <a href="../PharmaTrack Admin Profile/PharmaTrack Admin Profile.html" class="currentTab"><i class="fas fa-user"></i>Profile</a>
+            <button class="logoutbtn"><i class="fas fa-right-from-bracket"></i>Log Out</button>
+        </section>
+
+    </nav>
+
+<!--- MAIN CONTENT --->
+        
+    <main>
+        <section class="content">
+            <h1>Profile</h1>
+            <div class="profileForm">
+                <h2>My Profile</h2>
+                <form>
+                    <div>
+                        <label for="employeeId">Employee ID</label>
+                        <input type="text" id="employeeId" name="employeeId">
+                    </div>
+                    
+                    <div>
+                        <label for="employeeName">Employee Name</label>
+                        <input type="text" id="employeeName" name="employeeName">
+                    </div>
+
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" id="employeeName" name="username">
+                    </div>
+                    
+                    <div id="password">
+                        <label for="password">Password</label>
+                        <input type="text" id="employeeName" name="password">
+                        <button>Change Password</button>
+                    </div>
+                    
+                    <div>
+                        <label for="employeeRole">Role</label>
+                        <input type="text" id="employeeName" name="employeeRole">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>

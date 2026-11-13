@@ -4,29 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PharmaTrack</title>
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="../CSS/PharmaTrack Admin Dashboard.css">
+    <link rel="stylesheet" href="../../PharmaTrack Global/PharmaTrack.css">
+    <link rel="stylesheet" href="../../PharmaTrack Global/PharmaTrack Contents.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" />
-    <link rel="icon" type="image/png" href="assets/images/logo1.png">
+    <link rel="icon" type="image/png" href="../../assets/images/logo1.png">
 </head>
 <body>
 
     <nav>
+        <button id="navbtn"><div id="navlogo"></div>PharmaTrack</button>
 
-        <div id="logo">
-            <a href="#" id="logoimg"><!--image--></a>
-            <a href="#" id="logotext">PharmaTrack</a>
-        </div>
-
-        <section id="navigation">
-            <ul>
-                <li><a href="#" class="dashtext"><i class="fas fa-th-large"></i>Dashboard</a></li>
-                <li><a href="#"><i class="fas fa-capsules"></i>Medicine</a></li>
-                <li><a href="#"><i class="fas fa-box"></i>Inventory</a></li>
-                <li><a href="#"><i class="fas fa-truck"></i>Orders</a></li>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i>Sales</a></li>
-                <li><a href="#"><i class="fas fa-chart-line"></i>Reports</a></li>
-                <li><a href="#"><i class="fas fa-users"></i>Users</a></li>
-            </ul>
+        <section id="navcontainer">
+            <a href="../PharmaTrack Dashboard/PharmaTrack Admin Dashboard.html" class="currentTab"><i class="fas fa-th-large"></i>Dashboard</a>
+            <a href="../PharmaTrack Medicine/PharmaTrack Admin Medicines.html" ><i class="fas fa-capsules"></i>Medicines</a>
+            <a href="../PharmaTrack Inventory/PharmaTrack Admin Inventory.html"><i class="fas fa-box-open"></i>Inventory</a>
+            <a href="../harmaTrack Orders/PharmaTrack Admin Orders.html"       ><i class="fas fa-truck"></i>Orders</a>
+            <a href="../PharmaTrack Sales/PharmaTrack Admin Sales.html"        ><i class="fas fa-shopping-cart"></i>Sales</a>
+            <a href="../PharmaTrack Reports/PharmaTrack Admin Reports.html"    ><i class="fas fa-chart-line"></i>Reports</a>
+            <a href="../PharmaTrack Profile/PharmaTrack Admin Profile.html"    ><i class="fas fa-user"></i>Profile</a>
+            <button class="logoutbtn"><i class="fas fa-right-from-bracket"></i>Log Out</button>
         </section>
 
     </nav>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaTrack Staff Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+    <link rel="stylesheet" href="../PharmaTrack Global/PharmaTrack.css">
+    <link rel="stylesheet" href="../PharmaTrack Global/PharmaTrack Contents.css">
+    <link rel="stylesheet" href="PharmaTrack Staff Sales.css">
+    <link rel="icon" type="image/png" href="../assets/images/logo1.png">
+</head>
+
+<body>
+
+    <aside id="mainFrame1">
+        <div class="logo"></div>
+    </aside>
+
+<!--- NAVIGATION BAR --->
+
+    <nav>
+        <button id="navbtn"><div id="navlogo"></div>PharmaTrack</button>
+
+        <section id="navcontainer">
+            <a href="../PharmaTrack Admin Dashboard/PharmaTrack Admin Dashboard.html"><i class="fas fa-th-large"></i>Dashboard</a>
+            <a href="../PharmaTrack Admin Medicines/PharmaTrack Admin Medicines.html"><i class="fas fa-capsules"></i>Medicines</a>
+            <a href="../PharmaTrack Admin Inventory/PharmaTrack Admin Inventory.html"><i class="fas fa-box-open"></i>Inventory</a>
+            <a href="../PharmaTrack Admin Dashoard/PharmaTrack Admin Orders.html"><i class="fas fa-truck"></i>Orders</a>
+            <a href="../PharmaTrack Admin Sales/PharmaTrack Admin Sales.html" class="currentTab"><i class="fas fa-shopping-cart"></i>Sales</a>
+            <a href="../PharmaTrack Admin Reports/PharmaTrack Admin Reports.html"><i class="fas fa-chart-line"></i>Reports</a>
+            <a href="../PharmaTrack Admin Profile/PharmaTrack Admin Profile.html"><i class="fas fa-user"></i>Profile</a>
+            <button class="logoutbtn"><i class="fas fa-right-from-bracket"></i>Log Out</button>
+        </section>
+
+    </nav>
+
+<!--- MAIN CONTENT --->
+        
+    <main>
+        <section class="content">
+            <h1>Sales</h1>
+            <div>
+                <h2>Available Medicines</h2>
+
+                <div id="salesHistory">
+                    <button id="historyBtn">Sales History</button>
+                </div>
+
+                <div id="avMedTable">
+                    <table>
+                        <tr>
+                            <th>Medicine</th>
+                            <th>Batch No.</th>
+                            <th>Stock</th>
+                            <th>Expiraton</th>
+                            <th>Price</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+
+                        <tr>
+                            <td>Paracetamol</td>
+                            <td>PCM-001</td>
+                            <td>100</td>
+                            <td>2026-12-10</td>
+                            <td>₱8.00</td>
+                            <td>
+                                <button id="decrementSales">-</button>
+                                1
+                                <button id="incrementSales">+</button>
+                            </td>
+                            <td>
+                                <button id="addSales">Add</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Amoxicillin</td>
+                            <td>AMC-001</td>
+                            <td>100</td>
+                            <td>2026-12-10</td>
+                            <td>₱8.00</td>
+                            <td>
+                                <button id="decrementSales">-</button>
+                                1
+                                <button id="incrementSales">+</button>
+                            </td>
+                            <td>
+                                <button id="addSales">Add</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Yung Order Summary Card sa may bottom right-->
+
+                <div class="summaryCard">
+                    <h2>Order Summary</h2>
+                    <div id="transactionSummary">
+                        <p>Handled by: Juan dela Cruz</p>
+                        <p>Date: 2026-10-31</p>
+                    </div>
+                    
+                    <div id="summaryTable">
+                        <table>
+                            <tr>
+                                <td>Amoxicillin * 2</td>
+                                <td>₱16.00</td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+
+                    <div id="totalAmountTable">
+                        <table>
+                            <tr>
+                                <td>Total Amount</td>
+                                <td>₱16.00</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <button id="receiptBtn">Print Receipt</button>
+                </div>
+
+                <div id="pageButtons">
+                    <button id="prevBtn">Previous</button>
+                    <button id="currBtn">1</button>
+                    <button id="nextBtn">Next</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>

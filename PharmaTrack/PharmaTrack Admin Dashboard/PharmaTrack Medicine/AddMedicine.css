@@ -1,0 +1,21 @@
+.formContainer {
+    display:flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 351px;
+    margin: auto;
+    border-width: 1px;
+    opacity: 1;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: -10px 9px 6.3px 4px #00000040;
+    align-content: center;
+}
+
+form {
+    align-items:center;
+}
+
+h1 {
+    color: black;
+}
