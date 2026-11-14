@@ -1,0 +1,72 @@
+.profileForm{
+    height: auto;
+}
+
+.profileForm > h2{
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.profileForm form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profileForm > form > div{
+    display: inline-block;
+    margin: 10px 10% 10px 10px;
+}
+
+.profileForm > form > div *{
+    display: block;
+}
+
+.profileForm label{
+    height: 16px;
+    width: 265px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profileForm form input{
+    height: 36px;
+    width: 265px;
+    background: #e8e8e8;
+    border: 1px solid #616161;
+    border-radius: 6px;
+}
+
+#password > button{
+    width: auto;
+    height: 13px;
+    padding: 0;
+    font-size: 11px;
+    font-weight: 600;
+    color: #0052af;
+    text-decoration: underline;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1600px){
+    .profileForm > form > div{
+        margin: 20px;
+    }
+    #password{
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .profileForm > form{
+        justify-content: center;
+    }
+
+    .profileForm > form > div{
+        margin: 20px 20px;
+    }
+}

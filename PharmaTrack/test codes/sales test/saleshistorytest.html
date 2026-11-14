@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaTrack Staff Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+    <link rel="stylesheet" href="../../PharmaTrack Global/PharmaTrack.css">
+    <link rel="stylesheet" href="../../PharmaTrack Global/PharmaTrack Contents.css">
+    <link rel="stylesheet" href="PharmaTrack Staff Sales.css">
+    <link rel="stylesheet" href="salestest.css">
+    <link rel="icon" type="image/png" href="../../assets/images/logo1.png">
+    <script src="PharmaTrack Staff Sales.js" defer></script>
+</head>
+
+<body>
+
+    <aside id="mainFrame1">
+        <div class="logo"></div>
+    </aside>
+
+<!--- NAVIGATION BAR --->
+
+    <nav>
+        <button id="navbtn"><div id="navlogo"></div>PharmaTrack</button>
+
+        <section id="navcontainer">
+            <a href="../PharmaTrack Staff Dashboard/PharmaTrack Staff Dashboard.html"><i class="fas fa-th-large"></i>Dashboard</a>
+            <a href="../PharmaTrack Staff Medicines/PharmaTrack Staff Medicines.html"><i class="fas fa-capsules"></i>Medicines</a>
+            <a href="../PharmaTrack Staff Inventory/PharmaTrack Staff Inventory.html"><i class="fas fa-box-open"></i>Inventory</a>
+            <a href="../PharmaTrack Staff Sales/PharmaTrack Staff Sales.html"  class="currentTab"><i class="fas fa-shopping-cart"></i>Sales</a>
+            <a href="../PharmaTrack Staff Reports/PharmaTrack Staff Reports.html"><i class="fas fa-chart-line"></i>Reports</a>
+            <a href="../PharmaTrack Staff Profile/PharmaTrack Staff Profile.html"><i class="fas fa-user"></i>Profile</a>
+            <button class="logoutbtn"><i class="fas fa-right-from-bracket"></i>Log Out</button>
+        </section>
+    </nav>
+
+<!--- MAIN CONTENT --->
+        
+    <main>
+        <section id ="content1" class="content">
+            <h1>Sales History</h1>
+
+            <div class="totalTransactionsTab">
+                <h2>Total Transactions</h2>
+                <data>12345</data>
+                <p>from selected period</p>
+            </div>
+
+            <div class="totalSalesTab">
+                <h2>Total Sales</h2>
+                <data>₱12345</data>
+                <p>from selected period</p>
+            </div>
+
+            <div class="searchTransactionsTab">
+                <h2>Search Transactions</h2>
+                <h3>Date Filter</h3>
+                <div class="searchTransButtons">
+                    <button class="currentSearchButton">All</button>
+                    <button>Today</button>
+                    <button>Week</button>
+                    <button>Month</button>
+                </div>
+            </div>
+
+            <div class="transactionRecordsTab">
+                <h2>Transaction Records</h2>
+            </div>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>

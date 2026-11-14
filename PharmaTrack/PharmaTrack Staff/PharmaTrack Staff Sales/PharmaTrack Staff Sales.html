@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaTrack Staff Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+    <link rel="stylesheet" href="../../PharmaTrack Global/PharmaTrack.css">
+    <link rel="stylesheet" href="../../PharmaTrack Global/PharmaTrack Contents.css">
+    <link rel="stylesheet" href="PharmaTrack Staff Sales.css">
+    <link rel="icon" type="image/png" href="../../assets/images/logo1.png">
+    <script src="PharmaTrack Staff Sales.js" defer></script>
+</head>
+
+<body>
+
+    <aside id="mainFrame1">
+        <div class="logo"></div>
+    </aside>
+
+<!--- NAVIGATION BAR --->
+
+    <nav>
+        <button id="navbtn"><div id="navlogo"></div>PharmaTrack</button>
+
+        <section id="navcontainer">
+            <a href="../PharmaTrack Staff Dashboard/PharmaTrack Staff Dashboard.html"><i class="fas fa-th-large"></i>Dashboard</a>
+            <a href="../PharmaTrack Staff Medicines/PharmaTrack Staff Medicines.html"><i class="fas fa-capsules"></i>Medicines</a>
+            <a href="../PharmaTrack Staff Inventory/PharmaTrack Staff Inventory.html"><i class="fas fa-box-open"></i>Inventory</a>
+            <a href="../PharmaTrack Staff Sales/PharmaTrack Staff Sales.html"  class="currentTab"><i class="fas fa-shopping-cart"></i>Sales</a>
+            <a href="../PharmaTrack Staff Reports/PharmaTrack Staff Reports.html"><i class="fas fa-chart-line"></i>Reports</a>
+            <a href="../PharmaTrack Staff Profile/PharmaTrack Staff Profile.html"><i class="fas fa-user"></i>Profile</a>
+            <button class="logoutbtn"><i class="fas fa-right-from-bracket"></i>Log Out</button>
+        </section>
+    </nav>
+
+<!--- MAIN CONTENT --->
+        
+    <main>
+        <section id ="content1" class="content">
+            <h1>Sales</h1>
+
+            
+            <div id="salesTab" class="salesTab">
+                <div id="salesHistoryButton">
+                    <button id="historyBtn" type="button" onclick="salesHistoryShow()">Sales History</button>
+                </div>
+
+                <h2>Available Medicines</h2>
+
+                <div id="avMedTable">
+                    <table>
+                        <tr>
+                            <th>Medicine</th>
+                            <th>Batch No.</th>
+                            <th>Stock</th>
+                            <th>Expiraton</th>
+                            <th>Price</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+
+                        <tr>
+                            <td>Paracetamol</td>
+                            <td>PCM-001</td>
+                            <td>100</td>
+                            <td>2026-12-10</td>
+                            <td>₱8.00</td>
+                            <td class="addMinusButtons">
+                                <button id="decrementSales">-</button>
+                                1
+                                <button id="incrementSales">+</button>
+                            </td>
+                            <td>
+                                <button id="addSales">Add</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Amoxicillin</td>
+                            <td>AMC-001</td>
+                            <td>100</td>
+                            <td>2026-12-10</td>
+                            <td>₱8.00</td>
+                            <td class="addMinusButtons">
+                                <button id="decrementSales">-</button>
+                                1
+                                <button id="incrementSales">+</button>
+                            </td>
+                            <td>
+                                <button id="addSales">Add</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Yung Order Summary Card sa may bottom right-->
+
+                <div class="summaryCard">
+                    <h2>Order Summary</h2>
+                    <div id="transactionSummary">
+                        <p>Handled by: Juan dela Cruz</p>
+                        <p>Date: 2026-10-31</p>
+                    </div>
+                    
+                    <div id="summaryTable">
+                        <table>
+                            <tr>
+                                <td>Amoxicillin * 2</td>
+                                <td>₱16.00</td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+
+                    <div id="totalAmountTable">
+                        <table>
+                            <tr>
+                                <td>Total Amount</td>
+                                <td>₱16.00</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <button id="receiptBtn">Print Receipt</button>
+                </div>
+
+                <div id="pageButtons">
+                    <button id="prevBtn">Previous</button>
+                    <button id="currBtn">1</button>
+                    <button id="nextBtn">Next</button>
+                </div>
+            </div>
+
+            <div id="totalTransactionsTab" class="hideContent">
+                <h2>Total Transactions</h2>
+                <data>12345</data>
+                <p>from selected period</p>
+            </div>
+
+            <div id="totalSalesTab" class="hideContent">
+                <h2>Total Sales</h2>
+                <data>₱12345</data>
+                <p>from selected period</p>
+            </div>
+
+            <div id="searchTransactionsTab" class="hideContent">
+                <h2>Search Transactions</h2>
+                <data>12345</data>
+                <p>from selected period</p>
+            </div>
+
+            <div id="transactionRecordsTab" class="hideContent">
+                <h2>Transaction Records</h2>
+                <data>12345</data>
+                <p>from selected period</p>
+            </div>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>
