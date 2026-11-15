@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure CSS Timed Loader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        /* 1. LOADING SCREEN CONTAINER */
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            
+            /* Run the fade-out animation */
+            animation: fadeOut 0.5s ease-in-out forwards;
+            /* Delay the animation so it stays visible for 2.5 seconds first */
+            animation-delay: 2.5s; 
+        }
+
+        /* 2. THE SPINNER ANIMATION */
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #e0e0e0;
+            border-top: 5px solid #e74c3c; /* Red accent */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Spinner rotation */
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Fade out and completely hide the screen */
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+                visibility: visible;
+            }
+            100% {
+                opacity: 0;
+                visibility: hidden; /* Crucial so users can click the content underneath */
+            }
+        }
+
+        /* MAIN CONTENT */
+        .main-content {
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="main-content">
+        <h1>Pure CSS Loading Screen</h1>
+        <p>This loader stays visible for exactly 2.5 seconds, fades out for 0.5 seconds, and then lets you interact with the page—all without a single line of JavaScript!</p>
+    </div>
+
+</body>
+</html>

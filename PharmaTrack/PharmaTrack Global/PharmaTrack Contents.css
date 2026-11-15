@@ -1,0 +1,283 @@
+body{
+    background: linear-gradient(#5f1616, #6d1919, #a70000);
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+
+/*------------------------yung nav bar------------------------*/
+nav{
+    height: 100vh;
+    width: 15vw;
+    min-width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 5;
+    transition: 0s;
+}
+
+#navbtn{
+    width: 100%;
+    height: 100px;
+    background: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: 0px;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+}
+
+#navlogo{
+    background: url("../assets/images/logo1.png") center / contain no-repeat;
+    aspect-ratio: 1 / 1;
+    width: 50px;
+    min-width: 50px;
+}
+
+#navcontainer a{
+    height: 50px;
+    width: 94%;
+    margin: 2% 1% 2% 5%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#navcontainer a:hover{
+    background: white;
+    color: black;
+}
+
+#navcontainer a:active, #navcontainer .logoutbtn:active{
+    filter: brightness(95%);
+    font-weight: 600;
+}
+
+#navcontainer i{
+    margin-right: 5px;
+}
+
+#navcontainer .currentTab{
+    background: white;
+    color: black;
+    font-weight: 600;
+}
+/*------------------------ Yung Log Out button ------------------------*/
+
+.logoutbtn{
+    height: 50px;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 5%;
+    left: 20px;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    border-radius: 100px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/*------------container ng mga content sa page------------*/
+main{
+    width: 85vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*------------------------yung content------------------------*/
+
+.content{
+    height: 95%;
+    width: 95%;
+    padding: 20px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content > h1{
+    width: 100%;
+    height: 5%;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.content > div{
+    position: relative;
+    background: #efefef;
+    border: 1.5px solid #ababab;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content > div > h2{
+    height: auto;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.content > div > div > table{
+    width: 100%;
+    border: 0px;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+    text-align: left;
+}
+
+.content > div > div > table tr{
+    height: 40px;
+}
+
+.content > div > div > table th{
+    padding: 0px 10px;
+    color: #616161;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.content > div > div > table td{
+    padding: 10px;
+    border: 0px;
+    background: #d9d9d9;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.content > div > div > table td:first-child{
+    border-radius: 11px 0px 0px 11px;
+}
+
+.content > div > div > table td:last-child{
+    border-radius: 0px 11px 11px 0px;
+}
+
+/*------------------------ yung page buttons ------------------------*/
+
+#pageButtons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: none;
+    border: none;
+}
+
+#pageButtons button{
+    height: 35px;
+    margin: 0px 5px;
+    border-width: 1px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: light;
+}
+
+#pageButtons button:hover{
+    filter: brightness(95%);
+}
+
+#pageButtons button:active{
+    transform: scale(1.05);
+}
+
+#prevBtn, #nextBtn{
+    width: 100px;
+    background: #d9d9d9;
+    border: #ababab solid 1px;
+    color: #ababab;
+}
+
+#currBtn{
+    width: 35px;
+    background: #a61d1d;
+    border: #000000 solid 1px;
+    color: white;
+    font-weight: 600;
+}
+
+/*------------------------ para responsive ------------------------*/
+
+@media (max-width: 1400px) {
+    nav{
+        width: 20vw;
+    }
+    main{
+        width: 80vw;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    main{
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        padding-top: 100px;
+    }
+
+    nav{
+        left: 10px;
+        height: 100px;
+        overflow: hidden;
+        backdrop-filter: blur(0px);
+    }
+
+    nav:hover{
+        overflow: auto;
+        height: auto;
+        backdrop-filter: blur(5px);
+        background:linear-gradient(to top, rgba(155, 6, 6, 0.8), rgba(0, 0, 0, 0));
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    nav:hover #navcontainer{
+        padding-bottom: 10px;
+    }
+
+    #navcontainer > a{
+        margin: 2% 5% 2% 5%;
+    }
+
+    #navbtn{
+        border: 0px;
+    }
+
+    .logoutbtn{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin: 2% 5% 2% 5%;
+        display: flex;
+        align-items: center;
+        font-size: medium;
+        height: 50px;
+        width: 94%;
+    }
+
+    #navcontainer .logoutbtn:hover{
+        background: white;
+        color: black;
+    }
+}

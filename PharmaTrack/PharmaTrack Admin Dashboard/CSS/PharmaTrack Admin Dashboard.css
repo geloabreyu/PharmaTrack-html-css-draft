@@ -1,0 +1,105 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    overflow: auto;
+}
+
+    .content > div {
+        width: 25%;
+    }
+
+        .content > div > * {
+            width: 100%;
+            margin: 0;
+        }
+
+#totalInventory > data, #monthlyRevenue > data, #lowStockAlerts > data, #ExpiryAlerts > data {
+    height: 40%;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#totalInventory > p, #monthlyRevenue > p, #lowStockAlerts > p, #ExpiryAlerts > p {
+    height: 15%;
+    font-size: 15px;
+    font-weight: 600;
+    color: #616161;
+}
+
+#totalInventory, #monthlyRevenue, #lowStockAlerts, #ExpiryAlerts {
+    width: 24%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#salesOverview {
+    width: 64%;
+    height: 33%;
+}
+
+    #salesOverview > p {
+        color: #616161;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    #salesOverview > table {
+        height: 70%;
+    }
+
+#topSelling {
+    width: 34%;
+    height: 33%;
+}
+
+#specificStockAlert, #specificExpiryAlert {
+    width: 49%;
+    height: 33%;
+}
+
+#tsmTable, #lsaTable, #seaTable {
+    width: 100%;
+    max-height: 90%;
+    overflow: auto;
+}
+
+    #lsaTable tr th:last-child, #seaTable tr th:last-child {
+        text-align: center;
+    }
+
+    #lsaTable tr td:last-child, #seaTable tr td:last-child {
+        text-align: center;
+        color: #e00000;
+    }
+
+@media (max-width: 1000px) {
+    #totalInventory, #monthlyRevenue, #lowStockAlerts, #ExpiryAlerts {
+        width: 49%;
+        height: 20%;
+    }
+
+    .content > div {
+        margin-bottom: 20px;
+    }
+
+    #salesOverview, #topSelling, #specificStockAlert, #specificExpiryAlert {
+        width: 100%;
+    }
+
+    .content > div > h2 {
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    #totalInventory, #monthlyRevenue, #lowStockAlerts, #ExpiryAlerts {
+        width: 100%;
+        height: 20%;
+    }
+}
