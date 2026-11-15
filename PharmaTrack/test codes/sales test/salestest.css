@@ -219,7 +219,7 @@
 }
 
 @media (max-width:650px) {
-    .content > div{
+    #content1 > div{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -227,7 +227,7 @@
         overflow-x: hidden;
     }
 
-    .content > div > h2{
+    #content1 > div > h2{
         margin-top: 50px;
     }
 
@@ -267,7 +267,7 @@
     align-content: space-between;
 }
 
-.totalTransactionsTab *, .totalSalesTab *{
+.totalTransactionsTab *, .totalSalesTab *, .searchTransactionsTab *, .transactionRecordsTab *{
     width: 100%;
 }
 
@@ -275,9 +275,6 @@
     height: 50%;
     font-size: 48px;
     font-weight: 600;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
 .totalTransactionsTab p, .totalSalesTab p{
@@ -290,7 +287,7 @@
 
 .searchTransactionsTab{
     width: 100%;
-    height: 15%;
+    height: 17.5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -302,22 +299,17 @@
     margin: 0;
 }
 
-.searchTransactionsTab h2{
-    height: 20%;
-}
-
 .searchTransactionsTab h3{
-    height: 20%;
     font-size: 15px;
     font-weight: 600;
 }
 
 .searchTransButtons{
     width: 100%;
-    height: 50%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    overflow: auto;
 }
 
 .searchTransButtons button{
@@ -338,5 +330,20 @@
 
 .transactionRecordsTab{
     width: 100%;
-    height: 57.5%;
+    height: 55%;
+}
+
+.transactionRecordsTab > .transactionTable{
+    overflow: auto;
+    max-height: 90%;
+}
+
+.transactionRecordsTab div table tr th, .transactionRecordsTab div table tr td{
+    width: 25%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.transactionRecordsTab div table tr th:first-child, .transactionRecordsTab div table tr td:first-child{
+    text-align: left;
 }

@@ -1,18 +1,18 @@
+*{
+    transition: none;
+}
+
 .content{
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
-}
-
-.content *{
-    transition: 0s;
+    overflow: auto;
 }
 
 .hideContent{
-    position: fixed;
+    transform: translateY(100%);
     height: 0;
     width: 0;
     order: 1;
@@ -121,7 +121,7 @@
 }
 
 .summaryCard{
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 9 / 10;
     height: 50%;
     min-width: 300px;
     position: absolute;
@@ -161,7 +161,7 @@
 
 #summaryTable{
     width: 100%;
-    height: 50%;
+    height: 47.5%;
     overflow: auto;
 }
 
@@ -212,9 +212,113 @@
     cursor: pointer;
 }
 
+
+/* Yung sales history tab */
+
+.totalTransactionsTab, .totalSalesTab, .searchTransactionsTab, .transactionRecordsTab{
+    overflow: auto;
+}
+
+.totalTransactionsTab, .totalSalesTab{
+    width: 49%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.totalTransactionsTab *, .totalSalesTab *, .searchTransactionsTab *, .transactionRecordsTab *{
+    width: 100%;
+}
+
+.totalTransactionsTab data, .totalSalesTab data{
+    height: 50%;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.totalTransactionsTab p, .totalSalesTab p{
+    height: 15%;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #616161;
+}
+
+.searchTransactionsTab{
+    width: 100%;
+    height: 17.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.searchTransactionsTab > h2, .searchTransactionsTab > h3, .searchTransactionsTab > div{
+    width: 100%;
+    margin: 0;
+}
+
+.searchTransactionsTab h3{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.searchTransButtons{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.searchTransButtons button{
+    height: 30px;
+    width: 110px;
+    background: #ababab;
+    border: 1px solid #252525;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.searchTransButtons .currentSearchButton{
+    background: #a61d1d;
+}
+
+.transactionRecordsTab{
+    width: 100%;
+    height: 55%;
+    position: relative;
+}
+
+.transactionRecordsTab > .transactionTable{
+    overflow: auto;
+    max-height: 90%;
+}
+
+.transactionRecordsTab div table tr th, .transactionRecordsTab div table tr td{
+    width: 25%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.transactionRecordsTab div table tr th:first-child, .transactionRecordsTab div table tr td:first-child{
+    text-align: left;
+}
+
+#salesTabButton{
+    width: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
 @media (max-width: 1000px) {
     #summaryTable{
-        height: 45%;
+        height: 37.5%;
     }
 }
 
@@ -227,7 +331,7 @@
         overflow-x: hidden;
     }
 
-    .content > div > h2{
+    .content > .salesTab > h2{
         margin-top: 50px;
     }
 
@@ -238,7 +342,11 @@
         margin: 50px 0px 50px 0px;
     }
 
-    #pageButtons{
+    #summaryTable{
+        height: 35%;
+    }
+
+    .salesTab #pageButtons{
         display: flex;
         flex-wrap:  wrap;
         justify-content: center;
@@ -248,25 +356,19 @@
         flex-basis: 100%;
     }
 
-    #pageButtons button{
+    .salesTab #pageButtons button{
         margin: 0px 2.5px;
     }
-}
 
+    .totalTransactionsTab, .totalSalesTab{
+        width: 100%;
+    }
 
-/* Yung sales history tab */
+    .totalTransactionsTab, .totalSalesTab, .searchTransactionsTab, .transactionRecordsTab{
+        margin: 5px 0px;
+    }
 
-.totalTransactionsTab, .totalSalesTab{
-    width: 49%;
-    height: 20%;
-}
-
-.searchTransactionsTab{
-    width: 100%;
-    height: 15%;
-}
-
-.transactionRecordsTab{
-    width: 100%;
-    height: 57.5%;
+    .totalTransactionsTab data *, .totalSalesTab data *{
+        transform: scale(0.95);
+    }
 }

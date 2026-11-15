@@ -131,29 +131,62 @@
                     <button id="nextBtn">Next</button>
                 </div>
             </div>
+        </section>
 
-            <div id="totalTransactionsTab" class="hideContent">
+        <section id ="content2" class="hideContent">
+            <h1>Sales History</h1>
+
+            <div class="totalTransactionsTab">
                 <h2>Total Transactions</h2>
                 <data>12345</data>
                 <p>from selected period</p>
             </div>
 
-            <div id="totalSalesTab" class="hideContent">
+            <div class="totalSalesTab">
                 <h2>Total Sales</h2>
                 <data>₱12345</data>
                 <p>from selected period</p>
             </div>
 
-            <div id="searchTransactionsTab" class="hideContent">
+            <div class="searchTransactionsTab">
                 <h2>Search Transactions</h2>
-                <data>12345</data>
-                <p>from selected period</p>
+                <h3>Date Filter</h3>
+                <div class="searchTransButtons">
+                    <button class="currentSearchButton">All</button>
+                    <button>Today</button>
+                    <button>Week</button>
+                    <button>Month</button>
+                </div>
             </div>
 
-            <div id="transactionRecordsTab" class="hideContent">
+            <div class="transactionRecordsTab">
                 <h2>Transaction Records</h2>
-                <data>12345</data>
-                <p>from selected period</p>
+                <div class="transactionTable">
+                    <table>
+                        <tr>
+                            <th>Transaction ID</th>
+                            <th>Date</th>
+                            <th>Items</th>
+                            <th>Total</th>
+                        </tr>
+
+                        <tr>
+                            <td>TRX-001</td>
+                            <td>2026-10-31</td>
+                            <td>2</td>
+                            <td>₱16.00</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="pageButtons">
+                    <button id="prevBtn">Previous</button>
+                    <button id="currBtn">1</button>
+                    <button id="nextBtn">Next</button>
+                </div>
+
+                <div id="salesTabButton">
+                    <button id="historyBtn" type="button" onclick="salesHistoryShow()">Back</button>
+                </div>
             </div>
         </section>
     </main>

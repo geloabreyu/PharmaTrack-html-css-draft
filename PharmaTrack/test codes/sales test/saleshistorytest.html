@@ -38,7 +38,7 @@
 <!--- MAIN CONTENT --->
         
     <main>
-        <section id ="content1" class="content">
+        <section id ="content2" class="content">
             <h1>Sales History</h1>
 
             <div class="totalTransactionsTab">
@@ -66,11 +66,35 @@
 
             <div class="transactionRecordsTab">
                 <h2>Transaction Records</h2>
+                <div class="transactionTable">
+                    <table>
+                        <tr>
+                            <th>Transaction ID</th>
+                            <th>Date</th>
+                            <th>Items</th>
+                            <th>Total</th>
+                        </tr>
+
+                        <tr>
+                            <td>TRX-001</td>
+                            <td>2026-10-31</td>
+                            <td>2</td>
+                            <td>₱16.00</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="pageButtons">
+                    <button id="prevBtn">Previous</button>
+                    <button id="currBtn">1</button>
+                    <button id="nextBtn">Next</button>
+                </div>
+
+                <div id="salesTabButton">
+                    <button id="historyBtn" type="button" onclick="salesHistoryShow()">Sales History</button>
+                </div>
             </div>
         </section>
     </main>
-
-
 
 </body>
 
