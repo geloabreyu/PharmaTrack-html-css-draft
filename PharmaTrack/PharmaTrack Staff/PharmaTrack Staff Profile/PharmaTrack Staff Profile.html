@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../PharmaTrack Global/PharmaTrack Contents.css">
     <link rel="stylesheet" href="PharmaTrack Staff Profile.css">
     <link rel="icon" type="image/png" href="../../assets/images/logo1.png">
+    <script src="PharmaTrack Staff Profile.js"></script>
 </head>
 
 <body>
@@ -38,7 +39,7 @@
     <main>
         <section class="content">
             <h1>Profile</h1>
-            <div class="profileForm">
+            <div id="profileForm" class="profileForm">
                 <h2>My Profile</h2>
                 <form>
                     <div>
@@ -59,12 +60,36 @@
                     <div id="password">
                         <label for="password">Password</label>
                         <input type="text" id="employeeName" name="password">
-                        <button>Change Password</button>
+                        <button id="changePassShowBtn" type="button" onclick="changePassShow()">Change Password</button>
                     </div>
                     
                     <div>
                         <label for="employeeRole">Role</label>
                         <input type="text" id="employeeName" name="employeeRole">
+                    </div>
+                </form>
+            </div>
+
+            <div id="changePassword" class="hideContent">
+                <form>
+                    <h3>Change Password</h3>
+                    <div>
+                        <label for="currPass">Current Password</label>
+                        <input type="password" id="currPass" name="currPass">
+                    </div>
+                    
+                    <div>
+                        <label for="newPass">New Password</label>
+                        <input type="password" id="newPass" name="newPass">
+                    </div>
+
+                    <div>
+                        <label for="rePass">Retype New Password</label>
+                        <input type="password" id="rePass" name="rePass">
+                    </div>
+
+                    <div>
+                        <input type="submit" id="changePassBtn" class="changePassBtn" name="changePassBtn" value="Change Password">
                     </div>
                 </form>
             </div>

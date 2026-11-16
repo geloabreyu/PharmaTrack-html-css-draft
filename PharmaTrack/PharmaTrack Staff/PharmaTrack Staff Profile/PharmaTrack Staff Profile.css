@@ -1,3 +1,26 @@
+*{
+    transition: none;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+.hideContent{
+    transform: translateY(100%);
+    height: 0;
+    width: 0;
+    order: 1;
+    visibility: hidden;
+    z-index: -1;
+    overflow: hidden;
+}
+
 .profileForm{
     height: auto;
 }
@@ -20,18 +43,18 @@
     margin: 10px 10% 10px 10px;
 }
 
-.profileForm > form > div *{
+.profileForm > form > div *, .changePassword form div *{
     display: block;
 }
 
-.profileForm label{
+.profileForm div label, .changePassword form div label{
     height: 16px;
     width: 265px;
     font-size: 13px;
     font-weight: 600;
 }
 
-.profileForm form input{
+.profileForm form div input, .changePassword form div input{
     height: 36px;
     width: 265px;
     background: #e8e8e8;
@@ -69,4 +92,58 @@
     .profileForm > form > div{
         margin: 20px 20px;
     }
+}
+
+/* Change Password */
+
+.content .changePassword{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+.content .changePassword > form{
+    aspect-ratio: 1 / 1;
+    height: auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ababab;
+    border-radius: 20px;
+    box-shadow: -5px 5px 10px #ababab;
+}
+
+.content .changePassword form h3{
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.content .changePassword form label{
+    margin-top: 10px;
+}
+
+.content .changePassword form .changePassBtn{
+    margin-top: 20px;
+    padding: 0px 10px;
+    background: #a61d1d;
+    border: 1px solid #252525;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.content .changePassword form .changePassBtn:hover{
+    filter: brightness(95%);
+}
+
+.content .changePassword form .changePassBtn:active{
+    transform: scale(1.05);
 }

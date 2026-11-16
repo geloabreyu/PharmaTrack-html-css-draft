@@ -38,7 +38,9 @@
 }
 
 #historyBtn{
-    height: 25px;
+    he    font-weight: 600;
+    cursor: pointer;
+ight: 25px;
     width: auto;
     padding: 0px 10px;
     background: #a61d1d;
@@ -46,8 +48,6 @@
     border-radius: 100px;
     color: #ffffff;
     font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
 }
 
 #avMedTable{
