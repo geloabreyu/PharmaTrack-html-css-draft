@@ -11,7 +11,7 @@
     overflow: auto;
 }
 
-.content > div > *{
+.content > div > *:not(:last-child){
     width: 100%;
     margin: 0;
 }

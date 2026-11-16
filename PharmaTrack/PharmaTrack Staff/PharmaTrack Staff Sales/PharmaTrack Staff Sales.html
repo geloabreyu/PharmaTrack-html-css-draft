@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../PharmaTrack Global/PharmaTrack Contents.css">
     <link rel="stylesheet" href="PharmaTrack Staff Sales.css">
     <link rel="icon" type="image/png" href="../../assets/images/logo1.png">
+    <script src="../../PharmaTrack Global/PharmaTrack Confirm Prompt.js"></script>
     <script src="PharmaTrack Staff Sales.js" defer></script>
 </head>
 
@@ -30,7 +31,7 @@
             <a href="../PharmaTrack Staff Sales/PharmaTrack Staff Sales.html"  class="currentTab"><i class="fas fa-shopping-cart"></i>Sales</a>
             <a href="../PharmaTrack Staff Reports/PharmaTrack Staff Reports.html"><i class="fas fa-chart-line"></i>Reports</a>
             <a href="../PharmaTrack Staff Profile/PharmaTrack Staff Profile.html"><i class="fas fa-user"></i>Profile</a>
-            <button class="logoutbtn"><i class="fas fa-right-from-bracket"></i>Log Out</button>
+            <button id="LogoutBtn" class="logoutbtn" type="button" onclick="confirmPrompt()"><i class="fas fa-right-from-bracket"></i>Log Out</button>
         </section>
     </nav>
 
@@ -97,7 +98,11 @@
                 <!-- Yung Order Summary Card sa may bottom right-->
 
                 <div class="summaryCard">
-                    <h2>Order Summary</h2>
+                    <h2>
+                        Order Summary
+                        <button id="delOrderBtn" type="button" onclick="delOrder()"><i class="fas fa-trash"></i></button>
+                    </h2>
+                    
                     <div id="transactionSummary">
                         <p>Handled by: Juan dela Cruz</p>
                         <p>Date: 2026-10-31</p>
@@ -129,6 +134,27 @@
                     <button id="prevBtn">Previous</button>
                     <button id="currBtn">1</button>
                     <button id="nextBtn">Next</button>
+                </div>
+
+                <div id="delOrder" class="hideContent">
+                    <div>
+                        <h3>Delete Order?</h3>
+                        <div>
+                            <button>Delete</button>
+                            <button id="cancelDelBtn" type="button" onclick="delOrder()">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="logoutConfirm" class="hideContent">
+                <div>
+                    <h3>Logout Confirmation</h3>
+                    <h4>Are you sure you want to logout?</h4>
+                    <div>
+                        <button>Logout</button>
+                        <button id="cancelLogoutBtn" type="button" onclick="confirmPrompt()">Cancel</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -186,6 +212,17 @@
 
                 <div id="salesTabButton">
                     <button id="historyBtn" type="button" onclick="salesHistoryShow()">Back</button>
+                </div>
+            </div>
+
+            <div id="logoutConfirm" class="hideContent">
+                <div>
+                    <h3>Logout Confirmation</h3>
+                    <h4>Are you sure you want to logout?</h4>
+                    <div>
+                        <button>Logout</button>
+                        <button id="cancelLogoutBtn" type="button" onclick="confirmPrompt()">Cancel</button>
+                    </div>
                 </div>
             </div>
         </section>
