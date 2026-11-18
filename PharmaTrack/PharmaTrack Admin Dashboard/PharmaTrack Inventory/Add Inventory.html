@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaTrack Inventory</title>
+    <link rel="stylesheet" href="AddDel Inventory.css">
+    <link rel="stylesheet" href="../../PharmaTrack Global/PharmaTrack.css">
+    <link rel="stylesheet" href="../../PharmaTrack Global/PharmaTrack Contents.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" />
+    <link rel="icon" type="image/png" href="../../assets/images/logo1.png">
+</head>
+<body>
+
+    <nav>
+        <button id="navbtn"><div id="navlogo"></div>PharmaTrack</button>
+
+        <section id="navcontainer">
+            <a href="../PharmaTrack Dashboard/PharmaTrack Admin Dashboard.html"><i class="fas fa-th-large"></i>Dashboard</a>
+            <a href="../PharmaTrack Medicine/PharmaTrack Admin Medicines.html"><i class="fas fa-capsules"></i>Medicines</a>
+            <a href="../PharmaTrack Inventory/PharmaTrack Admin Inventory.html" class="currentTab"><i class="fas fa-box-open"></i>Inventory</a>
+            <a href="../PharmaTrack Orders/PharmaTrack Admin Orders.html"><i class="fas fa-truck"></i>Orders</a>
+            <a href="../PharmaTrack Sales/PharmaTrack Admin Sales.html"><i class="fas fa-shopping-cart"></i>Sales</a>
+            <a href="../PharmaTrack Reports/PharmaTrack Admin Reports.html"><i class="fas fa-chart-line"></i>Reports</a>
+            <a href="../PharmaTrack Users/PharmaTrack Admin Users.html"><i class="fas fa-user"></i>Users</a>
+            <button class="logoutbtn"><i class="fas fa-right-from-bracket"></i>Log Out</button>
+        </section>
+
+    </nav>
+
+    <main>
+        <section class="content">
+            <h1>Inventory</h1>
+
+            <div class="inventory">
+                
+                <form class="formContainer">
+                    <h2>Supply Information</h2>
+                    <div class="inputBatch">
+                        <label>Batch ID</label>
+                        <input type="text" />
+                    </div>
+
+                    <div class="inputMedName">
+                        <label>Medicine Name</label>
+                        <input type="text" />
+                    </div>
+
+                    <div class="inputBatchNo">
+                        <label>Batch No.</label>
+                        <input type="text" />
+                    </div>
+
+                    <div class="inputQuantity">
+                        <label>Quantity</label>
+                        <input type="number" />
+                    </div>
+
+                    <div class="inputSupplier">
+                        <label>Supplier</label>
+                        <input type="text" />
+                    </div>
+
+                    <div class="inputDateReceived">
+                        <label>Date Received</label>
+                        <input type="date" />
+                    </div>
+
+                    <div class="inputExpireDate">
+                        <label>Expiration Date</label>
+                        <input type="date" />
+                    </div>
+
+                    <div class="saveSupply">
+                        <button type="submit" id="saveMed">Save</button>
+                    </div>
+                </form>
+                
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

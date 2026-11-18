@@ -1,0 +1,141 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    overflow: auto;
+}
+
+.content > div {
+    width: 25%;
+}
+
+.content > div > * {
+    width: 100%;
+    margin: 0;
+}
+
+#totalTransaction > data, #itemsSold > data, #totalSales > data{
+    height: 40%;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#totalTransaction > p, #itemsSold > p, #totalSales > p {
+    height: 15%;
+    font-size: 15px;
+    font-weight: 600;
+    color: #616161;
+}
+
+#totalTransaction, #itemsSold{
+    width: 23%;
+    height: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#totalSales {
+    width: 50%;
+    height: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#searchTransaction {
+    width: 100%;
+    height: 20%;
+}
+
+#searchTransaction > p {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#dateBtn {
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-content: space-between;
+}
+
+#dateBtn button {
+    width: 120px;
+    height: 26px;
+    margin-top: 10px;
+    margin-inline: 10px;
+    border-radius: 28px;
+    border-width: 1px;
+    background: var(--reed, #A61D1D);
+    color: #ffffff;
+    opacity: 1;
+}
+
+#salesOverview > table {
+    height: 70%;
+}
+#transactionManagement {
+    width: 100%;
+    height: 40%;
+}
+
+#transactionManagement #transactionTable {
+    width: 100%;
+    max-height: 90%;
+    overflow: auto;
+}
+
+#transactionTable tr th, #transactionTable tr td, #stockTable tr th {
+    text-align: center;
+}
+
+#pageButtons {
+    width: 208px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+    #pageButtons button {
+        height: 24px;
+        margin: 0px;
+        font-size: 15px;
+    }
+
+    #pageButtons #prevBtn, #pageButtons #nextBtn {
+        width: 80px;
+    }
+
+@media (max-width: 1000px) {
+    #totalTransaction, #itemsSold, #totalSales {
+        width: 49%;
+        height: 20%;
+    }
+
+    .content > div {
+        margin-bottom: 20px;
+    }
+
+    #searchTransaction, #transactionManagement{
+        width: 100%;
+    }
+
+    .content > div > h2 {
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    #totalTransaction, #itemsSold, #totalSales {
+        width: 100%;
+        height: 20%;
+    }
+}

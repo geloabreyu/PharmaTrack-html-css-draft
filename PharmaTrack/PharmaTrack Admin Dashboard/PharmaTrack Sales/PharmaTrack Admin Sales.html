@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaTrack Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+    <link rel="stylesheet" href="../../PharmaTrack Global/PharmaTrack.css">
+    <link rel="stylesheet" href="../../PharmaTrack Global/PharmaTrack Contents.css">
+    <link rel="stylesheet" href="../CSS/PharmaTrack Admin Sales.css">
+    <link rel="icon" type="image/png" href="../../assets/images/logo1.png">
+</head>
+
+<body>
+
+    <aside id="mainFrame1">
+        <div class="logo"></div>
+    </aside>
+
+    <!--- NAVIGATION BAR --->
+
+    <nav>
+        <button id="navbtn"><div id="navlogo"></div>PharmaTrack</button>
+
+        <section id="navcontainer">
+            <a href="../PharmaTrack Dashboard/PharmaTrack Admin Dashboard.html"><i class="fas fa-th-large"></i>Dashboard</a>
+            <a href="../PharmaTrack Medicine/PharmaTrack Admin Medicines.html"><i class="fas fa-capsules"></i>Medicines</a>
+            <a href="../PharmaTrack Inventory/PharmaTrack Admin Inventory.html"><i class="fas fa-box-open"></i>Inventory</a>
+            <a href="../PharmaTrack Orders/PharmaTrack Admin Orders.html"><i class="fas fa-truck"></i>Orders</a>
+            <a href="../PharmaTrack Sales/PharmaTrack Admin Sales.html" class="currentTab"><i class="fas fa-shopping-cart"></i>Sales</a>
+            <a href="../PharmaTrack Reports/PharmaTrack Admin Reports.html"><i class="fas fa-chart-line"></i>Reports</a>
+            <a href="../PharmaTrack Users/PharmaTrack Admin Users.html"><i class="fas fa-user"></i>Users</a>
+            <button class="logoutbtn"><i class="fas fa-right-from-bracket"></i>Log Out</button>
+        </section>
+
+    </nav>
+
+    <!--- MAIN CONTENT --->
+
+    <main>
+        <section class="content">
+            <h1>Sales Management</h1>
+
+            <div id="totalTransaction">
+                <h2>Total Transaction</h2>
+                <data>12345</data>
+                <p>from selected period</p>
+            </div>
+
+            <div id="itemsSold">
+                <h2>Items Sold</h2>
+                <data>₱123,456</data>
+                <p>from selected period</p>
+            </div>
+
+            <div id="totalSales">
+                <h2>Total Sales</h2>
+                <data>123</data>
+                <p>from selected period</p>
+            </div>
+
+            <div id="searchTransaction">
+                <h2>Search Transaction</h2>
+                <p>Date Filter</p>
+                <div id="dateBtn">
+                    <button type="submit" id="allBtn">All</button>
+                    <button type="submit" id="todayBtn">Today</button>
+                    <button type="submit" id="weekBtn">Week</button>
+                    <button type="submit" id="monthBtn">Month</button>
+                </div>
+            </div>
+
+            <div id="transactionManagement">
+                <h2>Transaction Records</h2>
+                <div id="transactionTable">
+                    <table>
+                        <tr>
+                            <th>Transaction ID</th>
+                            <th>Date</th>
+                            <th>Employee</th>
+                            <th>Amount</th>
+                            <th></th>
+                        </tr>
+
+                        <tr>
+                            <td>TRIX-001</td>
+                            <td>2026-10-21</td>
+                            <td>Juan DeLa Cruz</td>
+                            <td>₱100</td>
+                            <td><a href="Delete Transaction.html"><i class="fas fa-trash-alt"></i></a></td>
+                        </tr>
+                    </table>
+
+
+                    <div id="pageButtons">
+                        <button id="prevBtn">Previous</button>
+                        <button id="currBtn">1</button>
+                        <button id="nextBtn">Next</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+
+</body>
+
+</html>
